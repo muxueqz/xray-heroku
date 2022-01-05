@@ -67,7 +67,7 @@ EOF
 
 # Convert to protobuf format configuration
 mkdir -p ${DIR_CONFIG}
-cp-v  ${DIR_TMP}/heroku.json > ${DIR_CONFIG}/config.json
+cp -v  ${DIR_TMP}/heroku.json > ${DIR_CONFIG}/config.json
 
 rm -rf ${DIR_TMP}
 
