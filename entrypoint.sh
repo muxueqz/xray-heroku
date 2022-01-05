@@ -2,7 +2,7 @@
 
 # Global variables
 DIR_CONFIG="/etc/v2ray"
-DIR_RUNTIME="/usr/bin"
+DIR_RUNTIME="/opt/xray"
 DIR_TMP="$(mktemp -d)"
 
 # Write V2Ray configuration
@@ -69,8 +69,6 @@ EOF
 mkdir -p ${DIR_CONFIG}
 cp-v  ${DIR_TMP}/heroku.json > ${DIR_CONFIG}/config.json
 
-# Install V2Ray
-install -m 755 ${DIR_TMP}/xray ${DIR_RUNTIME}
 rm -rf ${DIR_TMP}
 
 # Run V2Ray
