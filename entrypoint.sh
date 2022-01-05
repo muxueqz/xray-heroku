@@ -40,23 +40,6 @@ cat << EOF > ${DIR_TMP}/heroku.json
                 "path": "${WSPATH}-vless"
             }
         }
-    },
-    {
-        "port": ${PORT},
-        "protocol": "vless",
-        "settings": {
-            "clients": [{
-                "id": "${ID}"
-            }],
-            "decryption": "none"
-        },
-        "streamSettings": {
-            "network": "ws",
-            "security":"xtls",
-            "wsSettings": {
-                "path": "${WSPATH}-vless-xtls"
-            }
-        }
     }
     ],
     "outbounds": [{
