@@ -6,11 +6,12 @@ DIR_RUNTIME="/opt/xray"
 DIR_TMP="$(mktemp -d)"
 
 # Write V2Ray configuration
+        # "port": ${PORT},
 cat << EOF > ${DIR_TMP}/heroku.json
 {
     "inbounds": [
     {
-        "port": ${PORT},
+        "port": 8080,
         "protocol": "vmess",
         "settings": {
             "clients": [{
