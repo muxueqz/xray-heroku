@@ -56,5 +56,7 @@ cp -v  ${DIR_TMP}/heroku.json ${DIR_CONFIG}/config.json
 
 rm -rf ${DIR_TMP}
 
+cat  ${DIR_CONFIG}/config.json
+
 # Run V2Ray
 ${DIR_RUNTIME}/xray run -c ${DIR_CONFIG}/config.json
