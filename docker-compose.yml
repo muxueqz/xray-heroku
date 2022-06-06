@@ -3,5 +3,9 @@ version: '3'
 services:
   web:
     image: ghcr.io/muxueqz/xray-heroku:main
+    environment:
+      - ID=$ID
+      - PORT=$PORT
+      - WSPATH=$WSPATH
     ports:
-      - "8080:8080"
+      - 8080:8080
